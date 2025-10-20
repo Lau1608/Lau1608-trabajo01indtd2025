@@ -461,7 +461,10 @@ Una empresa de ropa sevillana debe decidir donde comenzar a expandir su negocio 
 
 Las alternativas son d1=Cáceres, d2=Madrid, d3=Cádiz.
 
-El éxito depende del comportamiento del mercado en estas zonas. Pueden considerarse tres situaciones: e1=Baja demanda, e2=Demanda media, e3=Alta demanda.
+El éxito depende del comportamiento del mercado en estas zonas. Pueden considerarse tres situaciones: 
+  e1=Baja demanda
+  e2=Demanda media
+  e3=Alta demanda.
 
 Los beneficios esperados se esperan en la siguiente tabla en miles de €:
 
@@ -490,7 +493,7 @@ Según el criterio de Wald, lo mejor es seleccionar la alternativa 2, es decir, 
 criterio.Optimista(tb1, favorable = TRUE)
 ```
 
-Según el criterio optimista tenemos dos posibles soluciones óptimas, la alternativa 1 y la 3, es decir, poner la nueva tienda en Cáceres y en Cádiz.
+Según el criterio Optimista tenemos dos posibles soluciones óptimas, la alternativa 1 y la 3, es decir, poner la nueva tienda en Cáceres y en Cádiz.
 
 
 para alfa=0.5
@@ -502,28 +505,28 @@ criterio.Hurwicz(tb1, alfa = 0.5, favorable = TRUE)
 dibuja.criterio.Hurwicz_Intervalos(tb1, favorable = TRUE, T)
 ```
 
-Según el criterio de Hurwicz, para un valor de alfa entre 0 y 0.667 la mejor alternativa es la 2 (poner la nueva tienda en Madrid), y para alfa entre 0.667 y 1 la mejor alternativa es la 1 (poner la nueva tienda en Cáceres)
+Según el criterio de Hurwicz, para un valor de alfa entre 0 y 0.667 la mejor alternativa es la 2 (poner la nueva tienda en Madrid), y para alfa entre 0.667 y 1 la mejor alternativa es la 1 (poner la nueva tienda en Cáceres).
 
 
 ```{r}
 criterio.Savage(tb1, favorable = TRUE)
 ```
 
-Según el criterio de Savage la alternativa optina es la segunda, es decir, poner la nueva tienda en Madrid
+Según el criterio de Savage la alternativa optina es la segunda, es decir, poner la nueva tienda en Madrid.
 
 
 ```{r}
 criterio.PuntoIdeal(tb1, favorable = TRUE)
 ```
 
-Según el criterio PuntoIdeal la mejor opción es la alternativa 2, es decir, poner la nueva tienda en Madrid
+Según el criterio PuntoIdeal la mejor opción es la alternativa 2, es decir, poner la nueva tienda en Madrid.
 
 
 ```{r}
 criterio.Laplace(tb1, favorable =T)
 ```
 
-Según el criterio de Laplace tenemos dos posibles soluciones óptimas, la alternativa 1 y la 2, es decir, poner la nueva tienda en Cáceres yen Madrid
+Según el criterio de Laplace tenemos dos posibles soluciones óptimas, la alternativa 1 y la 2, es decir, poner la nueva tienda en Cáceres y en Madrid.
 
 
 DESFAVORABLE
@@ -531,14 +534,14 @@ DESFAVORABLE
 criterio.Wald(tb12, favorable = F)
 ```
 
-Según el criterio de Wald la mejor opción es la alternativa dos, es decir, poner la nueva tienda en Madrid
+Según el criterio de Wald la mejor opción es la alternativa dos, es decir, poner la nueva tienda en Madrid.
 
 
 ```{r}
 criterio.Optimista(tb12, favorable = F)
 ```
 
-Según el criterio de Optimista la mejor opción es la alternativa tres es decir, poner la nueva tienda en Cádiz
+Según el criterio de Optimista la mejor opción es la alternativa tres, es decir, poner la nueva tienda en Cádiz.
 
 
 para alfa=0.5
@@ -550,21 +553,21 @@ criterio.Hurwicz(tb12, alfa = 0.5, favorable = F)
 dibuja.criterio.Hurwicz_Intervalos(tb12, favorable = F, T)
 ```
 
-Según el criterio de Hurwicz, para un valor de alfa entre 0 y 0.333 la mejor alternativa es la 2 (poner la nueva tienda en Madrid), y para alfa entre 0.333 y 1 la mejor alternativa es la 3 (poner la nueva tienda en Cádiz)
+Según el criterio de Hurwicz, para un valor de alfa entre 0 y 0.333 la mejor alternativa es la 2 (poner la nueva tienda en Madrid), y para alfa entre 0.333 y 1 la mejor alternativa es la 3 (poner la nueva tienda en Cádiz).
 
 
 ```{r}
 criterio.Savage(tb12, favorable = F)
 ```
 
-Según el criterio de Savage tenemos dos posibles soluciones óptimas, la alternativa 2 y la 3, es decir, poner la nueva tienda en madrid y en cádiz.
+Según el criterio de Savage tenemos dos posibles soluciones óptimas, la alternativa 2 y la 3, es decir, poner la nueva tienda en Madrid y en Cádiz.
 
 
 ```{r}
 criterio.PuntoIdeal(tb12, favorable = F)
 ```
 
-Segun el criterio punto ideal tenemos dos posibles soluciones óptimas, la alternativa 2 y la 3, es decir, poner la nueva tienda en Madrid y en Cádiz.
+Según el criterio punto ideal tenemos dos posibles soluciones óptimas, la alternativa 2 y la 3, es decir, poner la nueva tienda en Madrid y en Cádiz.
 
 
 ```{r}
@@ -599,4 +602,4 @@ para alfa=0.5
 criterio.Todos(tb2, alfa=0.5, favorable = F)
 ```
 
-Aplicando todos los criterios a nuestro problema consideramos que la alternativa 1 (permitir acceso a la zona restringida sólo a los residentes de esta) es 4 veces óptima, la alternativa 2 (permitir acceso sólo a coche eléctricos) es 2 veces optima y la alternativa 3 (permitir acceso a todos los coches) es 2 veces óptima. Por tanto, la mejor alternativa es la 1, al ser la que se ha elegido en más criterios en comparación a las demás.
+Aplicando todos los criterios a nuestro problema consideramos que la alternativa 1 (permitir acceso a la zona restringida sólo a los residentes de esta) es 4 veces óptima, la alternativa 2 (permitir acceso sólo a coche eléctricos) es 2 veces óptima y la alternativa 3 (permitir acceso a todos los coches) es 2 veces óptima. Por tanto, la mejor alternativa es la 1, al ser la que se ha elegido en más criterios en comparación a las demás.
