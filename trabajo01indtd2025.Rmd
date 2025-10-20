@@ -37,9 +37,11 @@ FAVORABLE
 criterio.Wald(tb1, favorable = TRUE)
 ```
 
+
 ```{r}
 criterio.Optimista(tb1, favorable = TRUE)
 ```
+
 
 para alfa=0.5
 ```{r}
@@ -54,13 +56,16 @@ dibuja.criterio.Hurwicz_Intervalos(tb1, favorable = TRUE, T)
 criterio.Savage(tb1, favorable = TRUE)
 ```
 
+
 ```{r}
 criterio.PuntoIdeal(tb1, favorable = TRUE)
 ```
 
+
 ```{r}
 criterio.Laplace(tb1, favorable =T)
 ```
+
 
 
 DESFAVORABLE
@@ -68,11 +73,12 @@ DESFAVORABLE
 criterio.Wald(tb12, favorable = F)
 ```
 
+
 ```{r}
 criterio.Optimista(tb12, favorable = F)
 ```
 
-para alfa=0.5
+
 ```{r}
 criterio.Hurwicz(tb12, alfa = 0.5, favorable = F)
 ```
@@ -81,17 +87,21 @@ criterio.Hurwicz(tb12, alfa = 0.5, favorable = F)
 dibuja.criterio.Hurwicz_Intervalos(tb12, favorable = F, T)
 ```
 
+
 ```{r}
 criterio.Savage(tb12, favorable = F)
 ```
+
 
 ```{r}
 criterio.PuntoIdeal(tb12, favorable = F)
 ```
 
+
 ```{r}
 criterio.Laplace(tb12, favorable =F)
 ```
+
 
 
 ## PROBLEMA 2:
