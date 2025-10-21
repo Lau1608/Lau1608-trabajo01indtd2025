@@ -1,5 +1,6 @@
 ---
-title: "trabajo"
+title: "TRABAJO INDIVIDUAL TD"
+author: "Laura Carrasco Sánchez"
 output: html_document
 date: "2025-10-20"
 ---
@@ -459,12 +460,26 @@ criterio.Todos = function(tablaX,alfa=0.3,favorable=TRUE) {
 ## PROBLEMA 1:
 Una empresa de ropa sevillana debe decidir donde comenzar a expandir su negocio en otras cuidades.
 
-Las alternativas son d1=Cáceres, d2=Madrid, d3=Cádiz.
+Las alternativas son:
+
+$$
+\begin{array}{l}
+A_1: \text{Cáceres} \\
+A_2: \text{Madrid} \\
+A_3: \text{Cádiz}
+\end{array}
+$$
+
 
 El éxito depende del comportamiento del mercado en estas zonas. Pueden considerarse tres situaciones: 
-  e1=Baja demanda
-  e2=Demanda media
-  e3=Alta demanda.
+
+$$
+\begin{array}{l}
+S_1: \text{Baja demanda} \\
+S_2: \text{Demanda media} \\
+S_3: \text{Alta demanda}
+\end{array}
+$$
 
 Los beneficios esperados se esperan en la siguiente tabla en miles de €:
 
@@ -481,7 +496,7 @@ tb12
 ```
 
 
-FAVORABLE
+*FAVORABLE*
 ```{r}
 criterio.Wald(tb1, favorable = TRUE)
 ```
@@ -529,7 +544,7 @@ criterio.Laplace(tb1, favorable =T)
 Según el criterio de Laplace tenemos dos posibles soluciones óptimas, la alternativa 1 y la 2, es decir, poner la nueva tienda en Cáceres y en Madrid.
 
 
-DESFAVORABLE
+*DESFAVORABLE*
 ```{r}
 criterio.Wald(tb12, favorable = F)
 ```
@@ -581,15 +596,27 @@ Según el criterio de Laplace la mejor opción es la alternativa uno, es decir, 
 En una cuidad se está planteando restringir el uso de coches en el centro de esta para reducir las emisiones contaminantes. Las autoridades deben decidir qué vehículos podrán acceder a la zona restringida.
 
 Tenemos tres alternativas sobre a que vehículos permitir el acceso:
-    a1=sólo residentes de la zona
-    a2=solo coches eléctricos
-    a3=todos los coches.
+    
+$$
+\begin{array}{l}
+A_1: \text{Sólo residentes de la zona} \\
+A_2: \text{Sólo coches eléctricos} \\
+A_3: \text{Todos los coches}
+\end{array}
+$$
+
 
 La decisión dependerá de las condiciones de los tipos de coches, representadas por tres posibles estados de la naturaleza: 
-    e1=año de fabricación
-    e2=tipo de combustible
-    e3=nivel de emisiones medio.
-    
+
+$$
+\begin{array}{l}
+S_1: \text{Año de fabricación} \\
+S_2: \text{Tipo de combustible} \\
+S_3: \text{Nivel de emisiones medio}
+\end{array}
+$$
+
+
 Los costes asociados (en miles de euros) representan el gasto que tendría el ayuntamiento en medidas complementarias (control, señalizacion, mantenimiento) según la alternativa elegida y el entorno.
 
 ```{r}
